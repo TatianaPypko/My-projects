@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: rgb(225, 228, 230);
+  border-radius: 5px;
+}
+
+.title {
+  margin-top: 0;
+  color: #052e55;
+  text-align: center;
+}
+
+.item {
+  padding: 13px 18px;
+  margin-bottom: 10px;
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  background-color: #eee;
+}
+
+.item:hover {
+  background-color: #b0b0b1b6;
+  cursor: pointer;
+  transition: .4s linear;
+}
+
+.item__title {
+  color: #333;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #15324d;
+}
+
+
+.item__description {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding: 0 10px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  color: #15324d;
+}
+
+li:last-child {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item__tehnologies-title {
+  margin: 0;
+  font-size: 16px;
+}
+
+.item__tehnologies {
+  text-align: end;
+}
+
+.item__link {
+  color: #337ab7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.item__link:hover {
+  color: #12395c;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 0;
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 0;
+    padding: 10px;
+  }
+}
